@@ -8,10 +8,10 @@ Die Materialien können frei von jedermann genutzt und verändert werden, entspr
 
 Der Kurs findet an mehreren Samstagen online statt, als Plattform nutzen wir BigBlueButton, der Link wird per E-Mail versandt.
 
-* **Tag 1**: 
-* **Tag 2**: 
-* **Tag 3**: 
-* **Tag 4**: 
+* **Tag 1**: 05.06.2021
+* **Tag 2**: 12.06.2021
+* **Tag 3**: 19.06.2021
+* **Tag 4**: 03.07.2021
 
 Jeweils grundsätzlich von 10:00 Uhr bis 12:00 Uhr und 13:00 Uhr bis 15:00 Uhr.
 
@@ -21,6 +21,7 @@ Jeweils grundsätzlich von 10:00 Uhr bis 12:00 Uhr und 13:00 Uhr bis 15:00 Uhr.
 * TeX Live 2021, herunterladen und installieren von tug.org/texlive. Wenn ihr unter Linux arbeitet: Bitte nicht aus den Distributionsquellen nehmen, sondern auch von tug.org installieren. Das TeX Live in den Distributionen ist oft nicht aktuell. Mac-User installieren bitte MacTeX (auch auf der tug.org Seite frei verfügbar)
 * Ein Editor zur Bearbeitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze. TeX Studio und Visual Studio Code (mit der ``LaTeX Workshop`` Erweiterung von James Yu) kann ich ebenfalls sehr empfehlen.
 * Emacs mit AucTeX ist ebenfalls eine mächtige Kombination, auch für vim gibt es wohl LaTeX-Erweiterungen, die ich aber nicht kenne.
+* Grundkenntnisse von Git bzw. Github sind nicht verkehrt, da alle Dateien im Github liegen.
 
 ## Kursinhalte
 
