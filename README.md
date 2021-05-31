@@ -8,9 +8,9 @@ Die Materialien können frei von jedermann genutzt und verändert werden, entspr
 
 Der Kurs findet an mehreren Samstagen online statt, als Plattform nutzen wir BigBlueButton, der Link wird per E-Mail versandt.
 
-* **Tag 1**: 05.06.2021
-* **Tag 2**: 12.06.2021
-* **Tag 3**: 19.06.2021
+* **Tag 1**: 12.06.2021
+* **Tag 2**: 19.06.2021
+* **Tag 3**: 26.06.2021
 * **Tag 4**: 03.07.2021
 
 Jeweils grundsätzlich von 10:00 Uhr bis 12:00 Uhr und 13:00 Uhr bis 15:00 Uhr.
