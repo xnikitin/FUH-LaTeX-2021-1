@@ -48,9 +48,11 @@
 
 \listoffigures
 
+\listoftables
+
 \section{Einleitung}
 
-Hallo Fernuni Hagen! Siehe Abschnitt \ref{sec:anhang} oder Abbildung \ref{fig:melli} auf Seite \pageref{fig:melli}.
+Hallo Fernuni Hagen! Siehe Tabelle \ref{tab:meineTabelle} auf Seite \pageref{tab:meineTabelle}.
 
 Ein Editor zur Bearbeitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze. 
 TeX Studio und Visual Studio Code (mit der LaTeX Workshop Erweiterung von James Yu) kann ich ebenfalls sehr empfehlen.
@@ -141,11 +143,15 @@ Ich & bin & toll & Ein Editor zur Bearbeitung der TeX-Dateien: TeX Live bringt f
 
 \vspace*{1cm}
 
+\begin{table}
+\centering
+\caption{Ich bin eine Tabelle}\label{tab:meineTabelle}
 \begin{tabular}{lrcp{6cm}} \toprule[1.5pt]
-Spalte 1 & Spalte 2 & Spalte 3 & Spalte 4 \\ \cmidrule[1pt](rl){1-4}
+\textbf{Spalte 1} & \textbf{Spalte 2} & \textbf{Spalte 3} & \textbf{Spalte 4} \\ \cmidrule[1pt](rl){1-4}
 Hallo & ich bin eine & Tabellenzelle & Ein Editor zur Be\-ar\-beitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze.  \\ \midrule[0.5pt]
 Ich & bin & toll & Ein Editor zur Bearbeitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze.  \\ \bottomrule[2.5pt]
 \end{tabular}
+\end{table}
 
 \end{document}
 
