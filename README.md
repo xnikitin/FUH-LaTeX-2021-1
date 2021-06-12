@@ -4,6 +4,15 @@ Materialien für den ersten LaTeX-Kurs 2021 an der Fernuni Hagen
 
 Die Materialien können frei von jedermann genutzt und verändert werden, entsprechende Hinweise auf meine Urheberschaft werden aber gern gesehen.
 
+
+## Wie kommt man an die Materialien?
+
+git installieren und dann auf der Kommandozeile
+
+git clone https://github.com/UweZiegenhagen/FUH-LaTeX-2021-1.git
+
+Updates holt man mit git pull (aus dem Verzeichnis heraus)
+
 ## Der Kurs
 
 Der Kurs findet an mehreren Samstagen online statt, als Plattform nutzen wir BigBlueButton, der Link wird per E-Mail versandt.
