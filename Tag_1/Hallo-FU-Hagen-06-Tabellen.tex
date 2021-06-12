@@ -1,0 +1,154 @@
+\documentclass[ngerman,12pt]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+
+\usepackage{palatino}
+\usepackage{microtype}
+\usepackage{paralist}
+\usepackage{blindtext,booktabs}
+
+\usepackage{graphicx} % nicht graphics
+% JPG, PNG, PDF
+
+\usepackage{hyperref}
+\hypersetup{
+    bookmarks=true,                     % show bookmarks bar
+    unicode=false,                      % non - Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,                        % show Acrobat’s toolbar
+    pdfmenubar=true,                        % show Acrobat’s menu
+    pdffitwindow=false,                 % window fit to page when opened
+    pdfstartview={FitH},                    % fits the width of the page to the window
+    pdftitle={My title},                        % title
+    pdfauthor={Author},                 % author
+    pdfsubject={Subject},                   % subject of the document
+    pdfcreator={Creator},                   % creator of the document
+    pdfproducer={Producer},             % producer of the document
+    pdfkeywords={keyword1, key2, key3},   % list of keywords
+    pdfnewwindow=true,                  % links in new window
+    colorlinks=true,                        % false: boxed links; true: colored links
+    linkcolor=blue,                          % color of internal links
+    filecolor=cyan,                     % color of file links
+    citecolor=green,                     % color of file links
+    urlcolor=magenta                        % color of external links
+}
+
+
+
+\title{Mein erstes \LaTeX-Dokument}
+\author{Uwe Ziegenhagen}
+\date{Köln, den 11.06.2021}
+
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\listoffigures
+
+\section{Einleitung}
+
+Hallo Fernuni Hagen! Siehe Abschnitt \ref{sec:anhang} oder Abbildung \ref{fig:melli} auf Seite \pageref{fig:melli}.
+
+Ein Editor zur Bearbeitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze. 
+TeX Studio und Visual Studio Code (mit der LaTeX Workshop Erweiterung von James Yu) kann ich ebenfalls sehr empfehlen.
+
+\includegraphics[width=5cm]{Bilder/miau}
+
+
+\begin{figure}[t] % h = here, t = top, b = bottom
+\centering
+\includegraphics[width=0.75\textwidth]{Bilder/melli} % Textbreite
+\caption{Ich bin Melli}\label{fig:melli2}
+\end{figure}
+
+
+\blindtext 
+
+\begin{tabular}{lrcp{5cm}}
+Hallo & ich bin eine & Tabellenzelle & Ein Editor zur Be\-ar\-beitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze.  \\
+Ich & bin & toll & Ein Editor zur Bearbeitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze.  \\
+\end{tabular}
+
+\begin{tabular}{|l|r|c|p{6cm}|}
+Hallo & ich bin eine & Tabellenzelle & Ein Editor zur Be\-ar\-beitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze.  \\
+Ich & bin & toll & Ein Editor zur Bearbeitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze.  \\
+\end{tabular}
+
+\begin{tabular}{|l|r|c|p{6cm}|}
+Hallo & ich bin eine & Tabellenzelle & Ein Editor zur Be\-ar\-beitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze.  \\
+Ich & bin & toll & Ein Editor zur Bearbeitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze.  \\
+\end{tabular}
+
+\vspace*{2cm}
+
+\begin{tabular}{|l|r|c|p{6cm}|} \hline
+Spalte 1 & Spalte 2 & Spalte 3 & Spalte 4 \\ \hline
+Hallo & ich bin eine & Tabellenzelle & Ein Editor zur Be\-ar\-beitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze.  \\ \hline
+Ich & bin & toll & Ein Editor zur Bearbeitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze.  \\ \hline
+\end{tabular}
+
+Vertikale Linien in Tabellen sollten tunlichst vermieden werden, Tabellen in Satzqualität erhält man mit dem booktabs Paket.
+
+\section*{Tabellen mit booktabs}
+% * bedeutet, nicht ins Inhaltsverzeichnis
+
+Vertikale Linien raus!
+
+\begin{tabular}{lrcp{6cm}} \hline
+Spalte 1 & Spalte 2 & Spalte 3 & Spalte 4 \\ \hline
+Hallo & ich bin eine & Tabellenzelle & Ein Editor zur Be\-ar\-beitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze.  \\ \hline
+Ich & bin & toll & Ein Editor zur Bearbeitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze.  \\ \hline
+\end{tabular}
+
+\vspace*{1cm}
+
+Statt hlines toprule und bottomrule Befehle nutzen
+
+\vspace*{1cm}
+
+\begin{tabular}{lrcp{6cm}} \toprule[1.5pt]
+Spalte 1 & Spalte 2 & Spalte 3 & Spalte 4 \\ \hline
+Hallo & ich bin eine & Tabellenzelle & Ein Editor zur Be\-ar\-beitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze.  \\ \hline
+Ich & bin & toll & Ein Editor zur Bearbeitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze.  \\ \bottomrule[2.5pt]
+\end{tabular}
+
+\vspace*{1cm}
+
+Statt hlines in der Tabelle midrule
+
+\pagebreak
+
+\begin{tabular}{lrcp{6cm}} \toprule[1.5pt]
+Spalte 1 & Spalte 2 & Spalte 3 & Spalte 4 \\ \midrule
+Hallo & ich bin eine & Tabellenzelle & Ein Editor zur Be\-ar\-beitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze.  \\ \midrule
+Ich & bin & toll & Ein Editor zur Bearbeitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze.  \\ \bottomrule[2.5pt]
+\end{tabular}
+
+\vspace*{1cm}
+
+Statt midrule cmidrule für linke bzw. rechte Einrückung
+
+\vspace*{1cm}
+
+\begin{tabular}{lrcp{6cm}} \toprule[1.5pt]
+Spalte 1 & Spalte 2 & Spalte 3 & Spalte 4 \\ \cmidrule[1pt](rl){1-4}
+Hallo & ich bin eine & Tabellenzelle & Ein Editor zur Be\-ar\-beitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze.  \\ \cmidrule[1pt](rl){1-4}
+Ich & bin & toll & Ein Editor zur Bearbeitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze.  \\ \bottomrule[2.5pt]
+\end{tabular}
+
+\vspace*{1cm}
+
+\begin{tabular}{lrcp{6cm}} \toprule[1.5pt]
+Spalte 1 & Spalte 2 & Spalte 3 & Spalte 4 \\ \cmidrule[1pt](rl){1-4}
+Hallo & ich bin eine & Tabellenzelle & Ein Editor zur Be\-ar\-beitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze.  \\ \midrule[0.5pt]
+Ich & bin & toll & Ein Editor zur Bearbeitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze.  \\ \bottomrule[2.5pt]
+\end{tabular}
+
+\end{document}
+
+
+
+

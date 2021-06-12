@@ -7,8 +7,10 @@
 \usepackage{palatino}
 \usepackage{microtype}
 \usepackage{paralist}
-
 \usepackage{blindtext}
+
+\usepackage{graphicx} % nicht graphics
+% JPG, PNG, PDF
 
 \usepackage{hyperref}
 \hypersetup{
@@ -44,9 +46,11 @@
 
 \tableofcontents
 
+\listoffigures
+
 \section{Einleitung}
 
-Hallo Fernuni Hagen! 
+Hallo Fernuni Hagen! Siehe Abschnitt \ref{sec:anhang} oder Abbildung \ref{fig:melli} auf Seite \pageref{fig:melli}.
 
 \section{Hauptteil}
 \subsection{Literaturüberblick}
@@ -100,7 +104,6 @@ Hallo Fernuni Hagen!
 \item [Backpulver und weitere Zutaten] 1 Packung
 \end{compactdesc}
 
-
 \subsubsection{Moderne Literatur}
 
 \blindtext[100]
@@ -113,8 +116,8 @@ In diesem Artikel konnten wir beweisen, dass
 
 \paragraph{Neuzeit} \blindtext
 
+\section{Anhang}\label{sec:anhang}
 
-\section{Anhang}
 
 Die Materialien können frei von jedermann genutzt und verändert werden, entsprechende Hinweise auf meine Urheberschaft werden aber gern gesehen.
 
@@ -123,22 +126,54 @@ Die Materialien können frei von jedermann genutzt und verändert werden, entspr
 Ein Editor zur Bearbeitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze. 
 TeX Studio und Visual Studio Code (mit der LaTeX Workshop Erweiterung von James Yu) kann ich ebenfalls sehr empfehlen.
 
-\textrm{Dieser Satz ist ohne besondere Auszeichnung.} % mit Serifen
+\includegraphics[width=5cm]{Bilder/miau}
 
-\textsf{Dieser Satz ist ohne besondere Auszeichnung.} % ohne Serifen
+\includegraphics[width=0.5\textwidth]{Bilder/miau} % halbe Textbreite
 
-\textbf{Dieser Satz ist ohne besondere Auszeichnung.} % Fettdruck
+\includegraphics[width=\textwidth,angle=45]{Bilder/miau} % Textbreite
 
-\texttt{Dieser Satz ist ohne besondere Auszeichnung.} % Typewriter
+\blindtext[3]
 
-\textit{Dieser Satz ist ohne besondere Auszeichnung.} % Kursiv
+\begin{figure}[b] % h = here, t = top, b = bottom
+\centering
+\includegraphics[width=0.75\textwidth]{Bilder/miau} % Textbreite
+\caption{Ich bin Melli}\label{fig:melli}
+\end{figure}
 
-\textbf{\textit{Dieser Satz ist ohne besondere Auszeichnung.}} % Fett Kursiv
+\begin{figure}[t] % h = here, t = top, b = bottom
+\centering
+\includegraphics[width=0.75\textwidth]{Bilder/melli} % Textbreite
+\caption{Ich bin Melli}\label{fig:melli2}
+\end{figure}
 
-\textsc{Dieser Satz ist ohne besondere Auszeichnung.} % Kapitälchen
+\blindtext[3]
 
-\textnormal{Dieser Satz ist ohne besondere Auszeichnung.} % ohne Auszeichnung
+\begin{figure}[t] % h = here, t = top, b = bottom
+\centering
+\includegraphics[width=0.75\textwidth]{Bilder/essen1} % Textbreite
+\caption{Selbstgekochtes}\label{fig:essen1}
+\end{figure}
 
+\begin{figure}[t] % h = here, t = top, b = bottom
+\centering
+\includegraphics[width=0.75\textwidth]{Bilder/essen2} % Textbreite
+\caption{Selbstgekochtes Nummer 2}\label{fig:essen2}
+\end{figure}
+
+
+\blindtext[3]
+
+
+\begin{figure}[b] % h = here, t = top, b = bottom
+\includegraphics[width=0.5\textwidth]{Bilder/miau} % Textbreite
+\caption{Ich bin Melli}\label{fig:melli}
+\end{figure}
+
+\begin{figure}[b] % h = here, t = top, b = bottom
+\hfill
+\includegraphics[width=0.5\textwidth]{Bilder/miau} % Textbreite
+\caption{Ich bin Melli}\label{fig:melli}
+\end{figure}
 
 
 \end{document}
