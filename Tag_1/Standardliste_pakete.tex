@@ -1,0 +1,43 @@
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage[utf8]{inputenc} % Kodierung der Datei
+\usepackage[T1]{fontenc} % Fontkodierung
+\usepackage{booktabs} % Schöne Tabellen
+\usepackage{babel} % Dokumententeile lokalisieren
+\usepackage{graphicx} % Bilder einbetten
+\usepackage{csquotes} % Zitate
+\usepackage{paralist} % Coole Aufzählungen 
+\usepackage{xcolor} % Farben
+
+% eigene Farbe im RGB Farbschema
+\definecolor{fuh}{rgb}{0.25,0.5,0.75}
+
+% Befehlsdefinition ohne Parameter
+\newcommand{\dozent}{\textbf{Uwe}}
+
+% Befehlsdefinition mit Parameter
+\newcommand{\person}[1]{\textcolor{fuh}{\textsc{#1}}}
+
+\begin{document}
+
+
+\glqq Es ist nicht Deine Schuld, dass die Welt ist wie sie ist, es ist nur Deine Schuld wenn sie so bleibt. \grqq
+
+\enquote{Es ist nicht Deine Schuld, dass die Welt \enquote{Es ist nicht Deine Schuld, dass die Welt ist wie sie ist, es ist nur Deine Schuld wenn sie so bleibt.} ist wie sie ist, es ist nur Deine Schuld wenn sie so bleibt.}
+
+\textcolor{red}{Hallo Fernuni Hagen}
+
+\textcolor{fuh}{Hallo Fernuni Hagen}
+
+% Wie definiere ich eine neue Farbe? Siehe Doku
+% Wie komme ich an die Doku
+
+Wo ist der Fehler? \enquote{Ein wunderschönes Zitat mit \enquote{Zitat im Zitat}.}
+
+Deine Schuld, dass die Welt ist wie sie ist, es ist nur Deine Schuld wenn sie  so bleibt. \textcolor{fuh}{\textsc{Albert Einstein}} Deine Schuld, dass die Welt ist wie sie ist, es ist nur Deine Schuld wenn sie so bleibt.
+
+\dozent
+
+\person{Albert Einstein} und \person{Paul Dirac} haben zusammen gearbeitet.
+
+\end{document}
