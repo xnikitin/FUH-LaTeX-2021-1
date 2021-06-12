@@ -38,12 +38,10 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf der Teilnehmerinnen
 
 ### Tag 1 - Grundlagen
 
-* Vorstellung der Beteiligten, wer bin ich und wer seid ihr
-* Was sind die Lernziele der Teilnehmerinnen und Teilnehmer
-* Vorstellung von DANTE e.V.
+* Vorstellung der Beteiligten, wer bin ich und wer seid ihr, was sind eure Lernziele
 * Historie von TeX und LaTeX
-* Check der Umgebungen bzw. Installationen
-* Das erste Dokument "Hello \LaTeX"
+* Vorstellung von DANTE e.V.
+* Check der Umgebungen bzw. Installationen mittels "Hallo \LaTeX" Dokument
 * Klassen, Pakete, Umgebungen und Befehle
 * Warum man article, report und book nicht nutzen sollte -- die KOMA Klassen
 * Strukturierte Dokumente, ``\chapter``, ``\section`` & Co, Inhaltverzeichnisse
