@@ -9,7 +9,7 @@
 \usepackage{paralist}
 \usepackage{xcolor}
 \usepackage{palatino}
-\usepackage{blindtext}
+\usepackage{blindtext,microtype}
 
 \setkomavar{date}{Entenhausen, den \today}
 \setkomavar{fromname}{Donald Duck}
@@ -18,6 +18,17 @@
 \setkomavar{myref}{19.06.2021+1}
 \setkomavar{yourref}{2021-06-10-Kündigung}
 
+\firsthead{%
+\usekomavar{fromname} \hfill Telefon: +49(0)123-456-7809
+\vspace*{0.25cm}
+\hrule
+}
+
+\firstfoot{%
+\hrule
+\vspace*{0.25cm}
+donald.duck@duck-enterprises.com
+}
 
 
 \begin{document}
