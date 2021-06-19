@@ -65,6 +65,7 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf der Teilnehmerinnen
 
 * Fragen?
 * Zusammenfassung vom 2. Termin, Wiederholung
+* Satz von Lebensläufen, CVs
 * Andere Editoren: ``TeXworks`` und ``Visual Studio Code``
 * Schneller TeX mit Autohotkey & Co
 * Einheitensatz mit ``siunitx``
