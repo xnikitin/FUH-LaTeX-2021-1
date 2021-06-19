@@ -1,0 +1,180 @@
+\documentclass[12pt,ngerman,parskip=full]{scrreprt}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{babel}
+\usepackage{graphicx}
+\usepackage{csquotes}
+\usepackage{paralist}
+\usepackage{xcolor}
+
+% Für den Mathesatz
+\usepackage{amsmath}
+\usepackage{derivative}
+\usepackage{esvect} % für \vv{} Vektorbefehl
+\DeclareMathOperator{\xyz}{xyz}
+
+\begin{document}
+
+\chapter{Einleitung}
+
+Hallo, ich bin eine Formel $a^2+b^2=c^2$  im fließenden Text. 
+
+\[ a^2 + b^2 = c^2 \]
+
+$$ a^2 + b^2 = c^2 $$ sollte man nicht mehr benutzen, das dies TeX-Notation ist und nicht offiziell in \LaTeX\ unterstützt wird. 
+
+Symbole findet man am einfachsten, wenn man über die Kommandozeile \enquote{texdoc symbols} aufruft.
+
+\begin{equation}\label{eq:pythagoras}
+a^2 + b^2 = c^2 \Rightarrow c = \sqrt{a^2+b^2} \rightarrow  = \sqrt[2]{a^2+b^2}
+\end{equation}
+
+Siehe Gleichung  \ref{eq:pythagoras} auf Seite \pageref{eq:pythagoras}.
+
+\[ a^2 + b_3^2  \not=  a^{2^2} + b_{3^2}  \]
+
+\[  \sum_{i=1}^{100} = 5050  \rightarrow \sum_{i=\infty}^{\infty} = \infty \]
+
+\[  -\frac{p}{2} \pm \sqrt{  \left(\frac{p}{4}\right)^2  - q  }   \]
+
+\[  \overbrace{a^2 + b^2} = \underbrace{c^2}   \]
+
+\[ \prod_{x}^{y} = x \times y \cdot z  \mod t \]
+
+
+\[  \frac{\delta x}{\delta y} = c^2   \]
+
+\[ \odv*[3]{y}{x} +  \pdv*{f}{x,y} \]
+
+\[  \int_{x=1}^{\infty} \sin x \cos y \tan z = 4 \xyz 584 \]
+
+\begin{eqnarray}
+y &=& (a+b)^2 \\
+y &=& a^2 + 2ab + b^2  
+\end{eqnarray}
+
+\[
+\begin{array}{rcl}
+y &=& (a+b)^2 \\
+y + c+ e+ r &=& a^2 + 2ab + b^2  
+\end{array}
+\]
+
+\[\bordermatrix{%
+  & 1 & 2 & 3 \cr
+1& 1 & 2 & 3 \cr
+2& 1 & 2 & 3 \cr
+3 & 1 & 2 & 3 \cr
+}\]
+
+% Standard in LaTeX, amsmath hat weitere Typen
+\[\left(
+\begin{array}{ccc} 
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1 \\ 
+\end{array}\right)
+\]
+
+\[\left[
+\begin{array}{ccc} 
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1 \\ 
+\end{array}\right]
+\]
+
+%amsmath - Matrix ohne Klammern
+\[
+\begin{matrix} 
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1 \\ 
+\end{matrix}
+\]
+
+%amsmath - Matrix mit runden Klammern
+\[
+\begin{pmatrix} 
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1 \\ 
+\end{pmatrix}
+\]
+
+%amsmath - Matrix mit eckigen Klammern
+\[
+\begin{bmatrix} 
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1 \\ 
+\end{bmatrix}
+\]
+
+%amsmath - Matrix mit geschweiften Klammern
+\[
+\begin{Bmatrix} 
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1 \\ 
+\end{Bmatrix}
+\]
+
+
+%amsmath - Matrix mit geschweiften Klammern
+\[ X = \det 
+\begin{pmatrix} 
+1 & 0 \\ 
+0 & 1 \\ 
+\end{pmatrix}
+\]
+
+%amsmath - Matrix mit einfachen senkrechten Strichen
+\[ z = \det 
+\begin{vmatrix} 
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1 \\ 
+\end{vmatrix}
+\]
+
+%amsmath - Matrix mit doppelten senkrechten Strichen
+\[ z = \alpha \beta \gamma \pi 
+\begin{Vmatrix} 
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1 \\ 
+\end{Vmatrix}
+\]
+
+
+\[ \vv{a}  \cdot \vv{abc} \]
+
+\[  a \cap b  \cup c \rightarrow {x | x \text{ ist positiv}} \]
+
+\[ A \not= \overline{A} \]
+
+\[ ABC \not= \overline{ABC}  \Omega \]
+
+\clearpage
+
+Abstände im Mathematiksatz
+
+\[ a b c \rightarrow abc \]
+
+\[ a b c \rightarrow a\,b\,c \]
+
+\[ a b c \rightarrow a\;b\;c \]
+
+
+\[ a b c \rightarrow a\quad b\quad c \]
+
+\[ a b c \rightarrow a\qquad b\qquad c \]
+
+
+
+
+
+\end{document}
