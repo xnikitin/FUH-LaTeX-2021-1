@@ -57,6 +57,7 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf der Teilnehmerinnen
 * Versionisierung von Dokumenten mit git & Github
 * Wir bauen eine Vorlage für Seminar- und Abschlussarbeiten: ``titlepage``, ``scrpage``
 * Mathematiksatz (mit und ohne ``amsmath``)
+* ``nicefrac`` und ``nicematrix``
 * Mehr zum Bilder einbetten: ``subfigure``
 * Briefe setzen mit ``scrlttr2``
 
