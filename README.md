@@ -65,16 +65,16 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf der Teilnehmerinnen
 
 * Fragen?
 * Zusammenfassung vom 2. Termin, Wiederholung
-* Satz von Lebensläufen, CVs
+* Satz von Lebensläufen (CVs)
 * Andere Editoren: ``TeXworks`` und ``Visual Studio Code``
 * Schneller TeX mit Autohotkey & Co
 * Einheitensatz mit ``siunitx``
-* Fuß- und Randnoten -- ``\footnote`` and ``\marginpar``
 * Tabellensatz: Am Dezimalpunkt ausrichten mit dem "S" Spaltentyp von ``siunitx``
+* Fuß- und Randnoten -- ``\footnote`` and ``\marginpar``
 * Fonts für ``pdflatex``, der LaTeX Font Katalog (https://tug.org/FontCatalogue/)
 * Einfache Bibliografien -- die ``thebibliography`` Umgebung
 * Komplexe Bibliografien mit ``biblatex``, ``biber`` und ``jabref``
-* Mehr zu Präsentationen mit der ``Beamer``-Klasse
+* Präsentationen mit der ``Beamer``-Klasse
 
 Bitte Jabref von www.jabref.org installieren, kostet nichts und ist sehr gut.
 
