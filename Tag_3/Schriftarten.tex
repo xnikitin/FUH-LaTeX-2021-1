@@ -1,0 +1,49 @@
+\documentclass[12pt,ngerman,parskip=half]{scrartcl}
+
+\usepackage[utf8]{inputenc} % Eingabekodierung
+\usepackage[T1]{fontenc} % Schriftkodierung 
+\usepackage{booktabs} % schöne Tabellen
+\usepackage{babel} % Silbentrennung und ``Eindeutschung''
+\usepackage{graphicx} % Grafiken einbinden
+\usepackage{csquotes} % Zitate
+\usepackage{paralist} % Kompakte Aufzählungen
+\usepackage{xcolor} % Farben
+\usepackage{amsmath}
+\usepackage{blindtext} % Dummytext
+
+\title{Schriftarten in pdf\LaTeX}
+\author{Uwe Ziegenhagen}
+
+\begin{document}
+\maketitle
+
+
+\blindtext
+
+\blindtext
+
+\begin{equation}
+x_{1,2} = -\frac{p}{2} \pm \sqrt{  \left( \frac{p}{2} \right) ^2 - q  }
+\end{equation}
+
+
+\blindtext
+
+\begin{equation}
+\left\{
+\begin{array}{l}
+p = - \frac{5}{3} P^3 \left\{A \frac{\delta^2 \left(\frac{1}{\rho} \right)}{\delta \xi^2} + B  \frac{\delta^2 \left(\frac{1}{\rho} \right)}{\delta \eta^2} + C \frac{\delta^2 \left(\frac{1}{\rho} \right)}{\delta \zeta^2} \right\} + \text{konst.}, \\
+u = A \xi - \frac{5}{3} P^2 A \frac{\xi}{\rho^3} - \frac{\delta D}{\delta \xi}, \\
+v = B \eta - \frac{5}{3} P^3 B \frac{\eta}{\rho^3} - \frac{\delta D}{\delta \eta}, \\
+w = C \zeta - \frac{5}{3} P^3 C \frac{\zeta}{\rho^3} - \frac{\delta D}{\delta \zeta},
+\end{array}
+\right.
+\end{equation}
+
+
+\blindtext
+
+\blindtext
+
+
+\end{document}
