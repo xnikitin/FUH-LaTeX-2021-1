@@ -1,0 +1,94 @@
+\documentclass[12pt,ngerman,parskip=half]{scrartcl}
+
+\usepackage[utf8]{inputenc} % Eingabekodierung
+\usepackage[T1]{fontenc} % Schriftkodierung 
+\usepackage{booktabs} % schöne Tabellen
+\usepackage{babel} % Silbentrennung und ``Eindeutschung''
+\usepackage{graphicx} % Grafiken einbinden
+\usepackage{csquotes} % Zitate
+\usepackage{paralist} % Kompakte Aufzählungen
+\usepackage{xcolor} % Farben
+\usepackage{amsmath} % Erweiterung des Mathematik-Modus
+\usepackage{blindtext} % Dummytext
+\usepackage{microtype} %Mikrotypografie
+
+% ohne Paket ==> Standard-Schrift = Computer Modern
+\usepackage{lmodern} % Moderne Version der Computer Modern
+
+
+
+\title{Schriftarten in pdf\LaTeX}
+\author{Uwe Ziegenhagen}
+
+\begin{document}
+\maketitle
+
+
+\blindtext
+
+\begin{equation}
+x_{1,2} = -\frac{p}{2} \pm \sqrt{  \left( \frac{p}{2} \right) ^2 - q  }
+\end{equation}
+
+
+\blindtext
+
+\begin{equation}
+\left\{
+\begin{array}{l}
+p = - \frac{5}{3} P^3 \left\{A \frac{\delta^2 \left(\frac{1}{\rho} \right)}{\delta \xi^2} + B  \frac{\delta^2 \left(\frac{1}{\rho} \right)}{\delta \eta^2} + C \frac{\delta^2 \left(\frac{1}{\rho} \right)}{\delta \zeta^2} \right\} + \text{konst.}, \\
+u = A \xi - \frac{5}{3} P^2 A \frac{\xi}{\rho^3} - \frac{\delta D}{\delta \xi}, \\
+v = B \eta - \frac{5}{3} P^3 B \frac{\eta}{\rho^3} - \frac{\delta D}{\delta \eta}, \\
+w = C \zeta - \frac{5}{3} P^3 C \frac{\zeta}{\rho^3} - \frac{\delta D}{\delta \zeta},
+\end{array}
+\right.
+\end{equation}
+
+
+\blindtext
+
+Donald Knuth hat in \cite{knuth} gezeigt, das $P=NP$. 
+%Karl Marx hat in \cite{marx} auch einiges gezeigt.
+
+\blindtext
+
+\begin{thebibliography}{19}
+
+\bibitem{knuth}
+\textbf{Donald E. Knuth}, \textit{The \TeX book}, Addison Wesley, Massachusetts, 2nd edition, 1984
+
+\bibitem{marx}
+\textbf{Karl Max}, \textit{Das Kapital}, Vorwärts-Verlag Berlin, 1st edition,1850
+
+\bibitem{marx3}
+\textbf{Karl Max}, \textit{Das Kapital}, Vorwärts-Verlag Berlin, 1st edition,1850
+
+\bibitem{marx4}
+\textbf{Karl Max}, \textit{Das Kapital}, Vorwärts-Verlag Berlin, 1st edition,1850
+
+\bibitem{marx5}
+\textbf{Karl Max}, \textit{Das Kapital}, Vorwärts-Verlag Berlin, 1st edition,1850
+
+\bibitem{marx6}
+\textbf{Karl Max}, \textit{Das Kapital}, Vorwärts-Verlag Berlin, 1st edition,1850
+
+\bibitem{marx7}
+\textbf{Karl Max}, \textit{Das Kapital}, Vorwärts-Verlag Berlin, 1st edition,1850
+
+\bibitem{marx8}
+\textbf{Karl Max}, \textit{Das Kapital}, Vorwärts-Verlag Berlin, 1st edition,1850
+
+\bibitem{marx9}
+\textbf{Karl Max}, \textit{Das Kapital}, Vorwärts-Verlag Berlin, 1st edition,1850
+
+\bibitem{marx10}
+\textbf{Karl Max}, \textit{Das Kapital}, Vorwärts-Verlag Berlin, 1st edition,1850
+
+\bibitem{marx11}
+\textbf{Karl Max}, \textit{Das Kapital}, Vorwärts-Verlag Berlin, 1st edition,1850
+
+
+\end{thebibliography}
+
+
+\end{document}
