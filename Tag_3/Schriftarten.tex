@@ -8,8 +8,27 @@
 \usepackage{csquotes} % Zitate
 \usepackage{paralist} % Kompakte Aufzählungen
 \usepackage{xcolor} % Farben
-\usepackage{amsmath}
+\usepackage{amsmath} % Erweiterung des Mathematik-Modus
 \usepackage{blindtext} % Dummytext
+\usepackage{microtype} %Mikrotypografie
+
+% ohne Paket ==> Standard-Schrift = Computer Modern
+%\usepackage{lmodern} % Moderne Version der Computer Modern
+
+%\usepackage{fouriernc} % URW Schoolbook
+%\usepackage{fourier} %Utopia Regular with Fourier
+%\usepackage{concmath} % Concrete Math
+%\usepackage[math]{iwona} % Iwona
+
+% 
+\usepackage{sansmathfonts}
+%\usepackage[scaled=0.86]{beramono} % for code listings
+\usepackage[scaled=0.95]{helvet}
+\renewcommand{\rmdefault}{\sfdefault}
+
+%Beispiel, wenn Font keinen Mathefont hat
+%\usepackage{aurical} in Präambel,  \Fontauri im Dokument
+
 
 \title{Schriftarten in pdf\LaTeX}
 \author{Uwe Ziegenhagen}
@@ -17,8 +36,6 @@
 \begin{document}
 \maketitle
 
-
-\blindtext
 
 \blindtext
 
