@@ -1,4 +1,4 @@
-\documentclass[12pt,ngerman]{scrartcl}
+\documentclass[20pt,ngerman]{scrartcl}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -9,9 +9,43 @@
 \usepackage{paralist}
 \usepackage{xcolor}
 
+\usepackage{siunitx}
+
 \begin{document}
 
-Hallo 
+$O(n\log{}n)$ % regular O
+ 
+$\mathcal{O}(n\log{}n)$ % Open at top left
 
+%https://texblog.org/2014/06/24/big-o-and-related-notations-in-latex/
+
+
+Hallo, ich bin ein \ang{90,528} \ang{90.528} Winkel.
+
+Hallo, wir sind Zahlen: \num{3,1415927} \num{10,456} \num{1000000}.
+
+\si{m^2}
+
+\si{kg.m.s^{-1}}
+
+\si{\metre \per  \second^2}
+
+\si{\square\volt\cubic\lumen\per\farad}
+
+% Zahlen mit Einheiten über \SI{} statt \si{}
+
+\SI{9,81}{m.s^{-2}} \SI{9,81}{m\per \second^2}
+
+\SI{3,1415927}{m^2}
+
+% Listen von Zahlen und Einheiten
+
+\numlist{1;2;3;4;5}
+
+\numrange{1}{100}
+
+\SIlist{1;2;3}{m^2}
+
+\SIrange{1}{10}{m^3}
 
 \end{document}
