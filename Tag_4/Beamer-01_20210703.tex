@@ -9,6 +9,47 @@
 \usepackage{graphicx}
 \usepackage{csquotes}
 \usepackage{xcolor}
+\usepackage{listings}
+ 
+\lstset{literate=%
+    {Ö}{{\"O}}1
+    {Ä}{{\"A}}1
+    {Ü}{{\"U}}1
+    {ß}{{\ss}}1
+    {ü}{{\"u}}1
+    {ä}{{\"a}}1
+    {ö}{{\"o}}1
+    {~}{{\textasciitilde}}1
+}
+
+\definecolor{colBack}{rgb}{1,1,0.9}
+\definecolor{colKeys}{rgb}{0,0,1}
+\definecolor{colIdentifier}{rgb}{0,0,0}
+\definecolor{colComments}{rgb}{1,0,0}
+\definecolor{colString}{rgb}{0,0.5,0}
+
+\lstset{%
+    float=hbp,%
+    basicstyle=\ttfamily\footnotesize, %
+    identifierstyle=\color{colIdentifier}, %
+    keywordstyle=\color{colKeys}, %
+    stringstyle=\color{colString}, %
+    commentstyle=\color{colComments}, %
+    columns=flexible, %
+    tabsize=2, %
+    frame=single, %
+    extendedchars=true, %
+    showspaces=false, %
+    showstringspaces=false, %
+    numbers=left, %
+    numberstyle=\tiny, %
+    breaklines=true, %
+    backgroundcolor=\color{colBack}, %
+    breakautoindent=true, %
+    captionpos=b%
+}
+
+
 
 %\usetheme{PaloAlto}
 
@@ -166,6 +207,19 @@ a^2 + b^2 = c^2
 \end{itemize}
 
 \end{frame}
+
+\begin{frame}[fragile]
+
+\begin{lstlisting}[language={Python}]
+# delete copied files
+unlink('./dtk-bibliography/dtk-authoryear.bbx')
+unlink('./dtk-bibliography/dtk-authoryear.dbx')
+unlink('./dtk-bibliography/dtk-bibliography.pdf')
+unlink('./dtk-bibliography/dtk-bibliography.tex')
+\end{lstlisting}
+
+\end{frame}
+
 
 
 \end{document}
