@@ -1,0 +1,171 @@
+\documentclass[ngerman]{beamer}
+% Option handout um Version ohne \pause etc. zu erzeugen
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{csquotes}
+\usepackage{xcolor}
+
+%\usetheme{PaloAlto}
+
+\author{Uwe Ziegenhagen}
+\title{Meine erste Präsentation}
+\subtitle{Meine Abenteuer in Entenhausen}
+\date{Köln, den \today}
+
+\begin{document}
+
+\begin{frame}
+
+\maketitle
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Unser heutiges Programm}
+\framesubtitle{Tag 1}
+
+\tableofcontents
+
+\end{frame}
+
+
+
+
+
+\section{Grundlagen}
+
+\frame{
+\frametitle{Hallo Fernuni Hagen!}
+
+\begin{itemize}
+	\item Hallo
+	\item ich 
+	\item bin 
+	\item eine 
+	\item Bullet
+	\item Liste
+\end{itemize}
+
+}
+
+
+\frame{
+\frametitle{Hallo Fernuni Hagen!}
+
+\begin{enumerate}
+	\item Hallo
+	\item ich 
+	\item bin 
+	\item eine 
+	\begin{enumerate}
+	\item Hallo
+	\item ich 
+	\item bin 
+	\item eine 
+	\item Bullet
+	\item Liste
+\end{enumerate}
+	\item Bullet
+	\item Liste
+\end{enumerate}
+
+}
+
+
+\begin{frame}
+\frametitle{Bilder gehen auch}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=\textwidth]{miau.jpg}
+	\caption{Das ist eine Katze}\label{fig:mieze2}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Zweispaltig}
+
+\begin{columns}
+
+\begin{column}{0.33\textwidth}
+	\begin{itemize}
+		\item Ich bin 
+		\item eine 
+		\item Bullet-Liste
+	\end{itemize}
+\end{column}
+
+\begin{column}{0.66\textwidth}
+	\begin{figure}[htb]
+		\centering
+		\includegraphics[width=0.9\textwidth]{miau.jpg}
+		\caption{Das ist eine Katze}\label{fig:mieze2}
+	\end{figure}
+\end{column}
+
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Mathematik}
+
+\[a^2 + b^2 = c^2 \]
+
+\begin{equation}
+a^2 + b^2 = c^2
+\end{equation}
+
+
+\end{frame}
+
+\begin{frame}
+
+\begin{itemize}
+	\item Hallo \pause
+	\item ich \pause
+	\item bin  \pause
+	\item eine \pause 
+	\item Bullet
+	\item Liste
+\end{itemize}
+
+\end{frame}
+
+\section{Aufdeckungen}
+
+\begin{frame}
+
+\begin{itemize}
+	\item<1-> Hallo 
+	\item<2> ich 
+	\item<-2> bin  
+	\item<3-> eine 
+	\item<1> Bullet
+	\item<2> Liste
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+
+\begin{itemize}
+	\item<1-> Hallo 
+	\item<2-> ich 
+	\item<3-> bin  
+	\item<4-> eine 
+	\item<5-> Bullet
+	\item<6-> Liste
+\end{itemize}
+
+\end{frame}
+
+
+\end{document}
