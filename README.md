@@ -74,14 +74,13 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf der Teilnehmerinnen
 * Fonts für ``pdflatex``, der LaTeX Font Katalog (https://tug.org/FontCatalogue/)
 * Einfache Bibliografien -- die ``thebibliography`` Umgebung
 * Komplexe Bibliografien mit ``biblatex``, ``biber`` und ``jabref``
-* Präsentationen mit der ``Beamer``-Klasse
 
 Bitte Jabref von www.jabref.org installieren, kostet nichts und ist sehr gut.
 
 ### Tag 4 - Fortgeschrittenes
 
 * Fragen zum letzten Termin?
-* Liste wichtiger Pakete: https://ctan.mc1.root.project-creative.net/info/first-packages/first-packages.html
+* Präsentationen mit der ``Beamer``-Klasse
 * ``Arara`` in TeXworks konfigurieren, siehe https://www.uweziegenhagen.de/?p=2928
 
 ```
@@ -110,15 +109,16 @@ entfernen und
 
 hinzufügen, ggfalls noch entsprechende Schriften laden.
 
-* Dokumente unterteilen mit ``\input`` und ``\include``
 * Quellcode-Listings einfügen mit dem ``Listings`` Paket
-* Effizient TeXen mit ``Autohotkey``, automatischer Start mit Windows siehe https://www.autohotkey.com/docs/FAQ.htm#Startup (Skript oder Verknüpfung darauf in den Ordner C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup legen)
+* Liste wichtiger Pakete: https://ctan.mc1.root.project-creative.net/info/first-packages/first-packages.html
 * Schöne Matrizen mit ``nicematrix``
 * Umrahmte (farbige) Boxen mit ``tcolorbox`` (``texdoc tcolorbox``), alternativ siehe das ``mdframed`` Paket
 * Grafiken erstellen mit LaTeX-Paketen, Sehrsehrkurzeinführung ``TikZ``
 * Grundlagen der Automatisierung von Textsatz mit Python (Ein Weg, Serienbriefe zu erzeugen...)
-* Lebensläufe mit ``europecv`` oder ``moderncv``
+* Lebensläufe mit ``moderncv``
+* Effizient TeXen mit ``Autohotkey``, automatischer Start mit Windows siehe https://www.autohotkey.com/docs/FAQ.htm#Startup (Skript oder Verknüpfung darauf in den Ordner C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup legen)
 * Frage-und-Antwort-Teil
+
 
 ## Literaturempfehlungen
 
