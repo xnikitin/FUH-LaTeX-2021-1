@@ -39,13 +39,15 @@ punkt/.style={circle, minimum size = 1cm,blue,fill=yellow},
 \draw [thick,-stealth](0,0) -- (16,0);
 
 \draw (0,0) -- (5,5);
-\draw (0,0) .. controls (2,3) and (7,1) .. (5,5);
+\draw (0,0) .. controls (1,8) and (7,1) .. (5,5);
 
 \fill[red!25!white] (12,4) rectangle (14,6);
 
-\draw[red,thick,dashed] (14,2) circle (0.75cm);
+\draw[red,thick,dotted] (14,2) circle (0.75cm);
 
-\node [punkt](A) at (9,1){A};
+\draw[blue,dashed,thin] (10,5) circle (0.75cm);
+
+\node[punkt] (A) at (9,1){A};
 \node[draw] (B) at (8,4){B};
 \draw (A) -- (B);
 
